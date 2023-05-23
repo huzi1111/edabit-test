@@ -1,23 +1,23 @@
 const { Test } = require("../utils");
 
 function minMax(arr) {
-    if (arr.length === 0) {
-        return [];
-      }
     
-      let min = arr[0];
-      let max = arr[0];
-    
-      for (var i = 1; i < arr.length; i++) {
-        if (arr[i] < min) {
-          min = arr[i];
+    let min = arr[0];
+    let max = arr[0];
+    for (let i=0 ; i<arr.length ;i++ )
+    {
+        if( arr[i]<min)
+        {
+            min = arr[i];
         }
-        if (arr[i] > max) {
-          max = arr[i];
+        if( arr[i]>max)
+        {
+            max = arr[i];
         }
-      }
     
-      return [min, max];
+    
+    }
+    return[min, max];
 }
 
 Test.assertSimilar(minMax([14, 35, 6, 1, 34, 54]), [1, 54])
