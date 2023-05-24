@@ -1,8 +1,6 @@
 const { Test } = require("../utils");
 
 function whichIsLarger(f, g) {
-    let larger1 = f();
-    let larger2 = g();
 	
     if(f()>  g())
     {
@@ -12,10 +10,8 @@ function whichIsLarger(f, g) {
     {
       return "g";
     }
-    else
-    {
-        return "neither"
-    }
+  
+        return "neither";
 
 }
 
