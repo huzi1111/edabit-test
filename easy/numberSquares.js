@@ -3,11 +3,10 @@ const { Test } = require("../utils");
 function numberSquares(n) {
 let square = 0;
 
-for (let i = 1; i <= n; i++)
-{
+for (let i = 1; i <= n; i++) {
     square += i * i;
 }
-    return square;
+return square;
 }
 
 Test.assertEquals(numberSquares(3), 14)
