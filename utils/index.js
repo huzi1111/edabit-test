@@ -36,8 +36,10 @@ class Test {
         }
 
     }
+
     static assertNotEquals(actualOuput, expectedOutput,errorMessage) {
         try {
+           
             assert.deepStrictEqual(!actualOuput, expectedOutput);
             this.passedCount++;
             console.log(`Test Case ${this.totalCount} Passed ✅`);
