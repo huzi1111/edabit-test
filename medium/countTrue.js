@@ -1,16 +1,15 @@
-const { Test } = require("./utils");
+const { Test } = require("../utils");
 
 function countTrue(arr) {
-    let allObject = arr.filter((val) => {
-
-        // checking the type of elements using the typeof operator.
-        if ( typeofval == 'object' ) {
-           return true;
-        } else {
-             return false;
-        }
-     });
-     LettotalObjects = allObject.length;
+    let count = 0;
+   for(let i=0; i<arr.length; i++)
+   {
+    if(arr[i]== true)
+    {
+        count++;
+    }
+   }
+   return count;
 }
 
 Test.assertEquals(countTrue([true, false, false, true, false]), 2)
