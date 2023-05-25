@@ -14,25 +14,6 @@ if(num > result)
     }
     return false;
 
-
-// while(num>0){
-//     // Getting the rightmost digit
-//    let rightmost = num%10;
-    
-//     result = result*10 + rightmost;
-    
-//     // Removing the rightmost digit from the number
-//     num = Math.floor(num/10);
-//     if(num > result)
-//     {
-//         return true;
-//     }
-//     else if(num == result)
-//     {
-//         return true;
-//     }
-//     return false;
-// }
 }
 
 Test.assertEquals(largestSwap(27), false, '27 < 72, so not largest swap.')
