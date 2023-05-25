@@ -3,7 +3,7 @@ const { Test } = require("../utils");
 function largestSwap(num) {
 let firstnum = Math.floor(num/10);
 let secnum = (num%10);
-result = ("" + secnum + firstnum);
+result = parseInt("" + secnum + firstnum);
 if(num > result)
     {
         return true;
