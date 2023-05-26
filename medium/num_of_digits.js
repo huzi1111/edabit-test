@@ -1,7 +1,7 @@
 const { Test } = require("../utils");
 
 function num_of_digits(num) {
-    if (num == 0) return 1;  // Special case for zero
+    if (num === 0) return 1;  // Special case for zero
 
     let count = 0;
     num = Math.abs(num);  // Convert negative number to positive for counting
@@ -12,7 +12,7 @@ function num_of_digits(num) {
     }
   
     return count;
-  }
+}
 
 
 Test.assertEquals(num_of_digits(13124), 5)
